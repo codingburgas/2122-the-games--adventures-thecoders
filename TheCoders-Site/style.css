@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+   
+}
+.logo{
+   float: left;
+}
+.topnav{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+   
+    
+}
+.active{
+    text-decoration: underlined;
+    color: black;
+    font-size: 21px;
+}
+#header{
+    color: black;
+}
+.nav-text{
+   text-decoration: none;
+   color: black;
+
+}
+#aboutus{
+   background-color: lightgray;
+}
+.member{
+    flex-basis: 11%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.6s;
+    box-shadow: 4px 5px 4px 5px grey;
+    color: white;
+}
+
+.members-box{
+    justify-content: space-between;
+    column-count: 4;
+    column-gap: 40px;
+    padding: 25px 30px;
+ 	
+
+}
+.member:hover{
+    background-color: lightgray;
+    color: black;
+    transition-duration: 0.5s;
+}
