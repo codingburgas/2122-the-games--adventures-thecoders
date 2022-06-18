@@ -1,57 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  
-public float speed;
+    public float moveSpeed = 5f;
+    public Rigidbody2D rb;
+    public Weapon weapon;
 
-Rigidbody2D rigidbody;
+    Vector2 moveDirection;
+    Vector2 mousePosition;
+ 
 
-public GameObject bulletPrefab;
-
-public float bulletSpeed;
-
-private float lastFire;
-
-public float fireDelay;
-
-void Start()
-{
-    rigidbody = GetComponent<Rigidbody2D>();
-
-}
-
-
-void Update()
-{
-
-    float horizontal = Input.GetAxis("Horizontal");
-    float vertical = Input.GetAxis("Vertical");
-
-    float shootHor = Input.GetAxis("ShootHorizontal");
-    float shootVert = Input.GetAxis("ShootVertical");
-    if((shootHor != 0 || shootVert != 0) && Time.time > lastFire + fireDelay)
+    // Update is called once per frame
+    void Update()
     {
-        Shoot(shootHor, shootVert);
-        lastFire = Time.time;
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            weapon.Fire();
+        }
+
+        moveDirection = new Vector2(moveX, moveY).normalized;
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
     }
 
+    private void FixedUpdate()
+    {
 
-    rigidbody.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
 
-}
+        Vector2 aimDirection = mousePosition - rb.position;
+        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = aimAngle;
 
-void Shoot(float x, float y)
-{
-    GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
-    bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
-    bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(
-        (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
-        (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed,
-        0
-    );
-}
-
-
+    }
 
 }
