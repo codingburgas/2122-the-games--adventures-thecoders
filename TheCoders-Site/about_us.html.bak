@@ -68,13 +68,12 @@
 		
 	</section>
 	
-	<section>
-		<div id="footer">
-		<img src="images/logo.png" height="50px" width="150px">
-		<p> Created by TheCoders © 2022 	
-			
-		</div>
-		
+	<section id="footer">
+		<footer>
+			<id="footer_site">
+			<img src="images/logo.png" class="logo" height="100px" width="150px">
+			<p> Created by TheCoders © 2022 
+		</footer>
 	</section>
 	
 </body>

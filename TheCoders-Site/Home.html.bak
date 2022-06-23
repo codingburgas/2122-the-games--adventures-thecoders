@@ -8,21 +8,28 @@
 </head>
 
 <body>
-
 	<section id="nav">
 		<div class="topnav">
 			<a href="index.html" class="logo"><img src="images/logo1.png" height="50px" width="150px"></a>
-			<a href="index.html" class="nav-text">Home</a>
+			<a class="active" href="index.html">Home</a>
 			<a href="game_description.html" class="nav-text">Description of the game</a>
 			<a href="about_us.html" class="nav-text">About us</a>
 			<a href="contact_us.html" class="nav-text">Contact us</a>
-			<a href="download.html" class="active">Download</a>
+			<a href="download.html" class="nav-text">Download</a>
 		</div>
 	</section><br>
 	<section id="header">
-		<marquee><h1>DOWNLOAD THE GAME</h1></marquee>
+		<marquee><h1>Може би името на играта</h1></marquee>
+	</section>	
+	
+	<section>
+		<div id="footer">
+        <img src="images/logo.png" class="logo" height="50px" width="150px">
+		<p> Created by TheCoders © 2022 	
+			
+		</div>
+		
 	</section>
-      <button onclick class="button">DOWNLOAD</button>
 </body>
 
 </html>

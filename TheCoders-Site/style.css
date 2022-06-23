@@ -42,7 +42,7 @@ body{
     color: white;
 }
 
-.members-box{
+#members-box{
     justify-content: space-between;
     column-count: 4;
     column-gap: 40px;
@@ -67,15 +67,16 @@ body{
     box-shadow: 4px 5px 4px 5px grey;
     color: black;
     
+    
 }
 #footer{
     items-align: bottom;
     justify-content: center;
-    column-count: 2;
+    column-count: 1;
     display: flex;
     padding: 5px;
     background-color: black;
     border-radius: 3px;
-    box-shadow: 4px 5px 4px 5px grey;
+    box-shadow: 4px 5px 4px 5px black;
     color: white
 }

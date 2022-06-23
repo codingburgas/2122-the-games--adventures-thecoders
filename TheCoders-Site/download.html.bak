@@ -22,7 +22,7 @@
 	<section id="header">
 		<marquee><h1>DOWNLOAD THE GAME</h1></marquee>
 	</section>
-      <button onclick class="button">DOWNLOAD</button>
+	<onclick class="button">DOWNLOAD>
 </body>
 
 </html>
