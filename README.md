@@ -1,5 +1,5 @@
 <p align = "center">
- <img src = "" alt = "logo">
+ <img src = "TheCoders-Design/logo_thecoders.jpg" alt = "logo">
 
   <h1>✍ Description </h1>
   The Coders is a newly formed team made up from 8 team members. The goal of the team is to create an adventure game .You can learn about the rules of the game and about us on our in-game menu or in our website.
