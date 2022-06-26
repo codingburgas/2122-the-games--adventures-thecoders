@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body{
+    background-image: url("./s_image/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;   
+    background-color: #593E9B;
+
+}
+
+.container{
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    width: 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    width: 300px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: #DAB1DF;
+}
+
+ul.navbar{
+    display: flex;
+    list-style:none;    
+
+}
+
+ul.navbar li{
+    width: 100%;
+
+}
+
+ul.navbar li a{
+    text-decoration: none;
+    color: #8357B9;
+    margin-left: 25px;
+    padding: 25.5px 40px;
+    text-align: center; 
+    background-color: #DAB1DF;
+    grid-template-columns: 1fr auto;    
+    justify-content: space-around;
+    font-size: large;
+}
+
+ul.navbar li a.active{
+    color: #404B69;
+    font-style: italic;
+}
+
+ul.navbar li a:hover{
+    background: #F88D85;
+    transition: .3s;
+    text-transform: uppercase;
+    color:#593E9B;
+}
+/*Header ends here*/
+
+/*The content of game desc*/
+
+.heading{
+    font-weight: bold;
+    text-align: center;
+    font-size:xx-large;
+    text-shadow: #DAB1DF -2px 0,
+                 #8357B9 2px 0;
+}
+
+.game-box .card{
+    position:relative;
+    width: 95%;
+    height: 400px;
+    background-color: rgba(131, 87, 185, 0.6);
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+}
+
+.game-box .card img{
+    max-width: 100%;
+}
+
+.desc-content{
+    text-align: right;
+    padding-left: 150px;
+    max-height: 600px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#text{
+    padding-top: 50px;
+    padding-right: 50px;
+    font-size: large;
+    font-weight: 550;
+    color: #000;
+}
+/*Footer starts here*/
+.site-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+/*Footer text is here*/
+p.paragraph_footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+/*Footer's logo*/
+img.footer-logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+}
+
+img.footer-logo, .site-footer{
+    position: fixed;
+}
+
+/*Footer ends here*/
