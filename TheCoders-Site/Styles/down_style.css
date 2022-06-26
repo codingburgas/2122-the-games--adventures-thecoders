@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body{
+    background-image: url("./s_image/sky_clouds_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #593E9B;
+    position: relative;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100px;
+    height: 10vh;
+    display: flex;
+
+      align-items: center;
+
+}
+
+.logo{
+    width: 300px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: #DAB1DF;
+}
+
+ul.navbar{
+    display: flex;
+    list-style:none;    
+
+}
+
+ul.navbar li{
+    width: 100%;
+
+}
+
+ul.navbar li a{
+    text-decoration: none;
+    color: #8357B9;
+    margin-left: 25px;
+    padding: 25.5px 40px;
+    text-align: center; 
+    background-color: #DAB1DF;
+    grid-template-columns: 1fr auto;    
+    justify-content: space-around;
+    font-size: large;
+}
+
+ul.navbar li a.active{
+    color: #404B69;
+    font-style: italic;
+}
+
+ul.navbar li a:hover{
+    background: #F88D85;
+    transition: .3s;
+    text-transform: uppercase;
+    color:#593E9B;
+}
+/*Header ends here*/
+
+/*The content desc starts here*/
+
+.content-wrapper{
+    text-align: center;
+    width: 100%;
+    min-height: 80vh;
+    margin-left: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+#heading{
+    margin-bottom: 0px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #000;
+
+}
+
+#text{
+    margin-bottom: 50px;
+    color: #000;
+    text-align: center;
+    font-size: medium;
+}
+
+.download-bth{
+    margin-top: 20px;
+    position: center center;
+    background-color: #DAB1DF;
+    color: #593E9B;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-bth:hover{
+    background-color: #F88D85;
+}
+
+/*.download-bth{
+    width: 200px;
+    height: px;
+    padding-top: 0.5%;
+    border-radius: 15px;
+    background: #DAB1DF;
+    color: #404b69;
+    text-decoration:none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}*/
+
+
+/*The content desc ends here*/
+
+/*Footer starts here*/
+.site-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+p.paragraph_footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+img.footer-logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+}
+
+/*Footer ends here*/
+
+
