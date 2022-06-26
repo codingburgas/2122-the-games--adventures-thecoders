@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="contact_us.css">
-	<title>Името на играта или на отбора</title>
-</head>
-
-<body>
-
-	<section id="nav-bar">
-		<div class="topnav">
-			<a href="index.html" class="logo"><img src="images/logo1.png" height="50px" width="150px"></a>
-			<a href="index.html" class="nav-text" >Home</a>
-			<a href="game_description.html" class="nav-text">Description of the game</a>
-			<a href="about_us.html"class="nav-text">About us</a>
-			<a class="active" href="contact_us.html">Contact us</a>
-			<a href="download.html" class="nav-text">Download</a>
-		</div>
-	</section><br>
-	<section id="header">
-		<marquee><h1>Може би името на играта</h1></marquee>
-		
-	</section>
-	<section id="feedback">
-		<div class="container">
-			<form>
-				<h1>Send us your questions and messages</h1>
-				<div class="id">
-					<input type="text" placeholder="Enter your name here">
-					<i class="far fa-user"></i>
-				</div>
-				<div class="id">
-					<input type="email" placeholder="Enter your email  here">
-					<i class="far fa-envelope"></i>					
-				</div>
-				<textarea cols="15" rows="5" placeholder="Tell us what you think"></textarea>
-				<input type="reset" value="Send" onclick="alert('Successfully posted comment')">
-			</form>
-		</div>
-	</section>
-
-		
-
-</body>
-
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X_UA-Compartible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>TheCoders</title>
+        <!--Import styles and icon-->
+        <link rel="stylesheet" href="./styles/contact_us.css">
+        <link rel="icon" href="images/icon-circle.png" alt="TheCoders Logo">
+    </head>
+    <body>
+            <!--Navigation bar-->
+            <div class="container">
+                <header>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="TheCoders Logo">
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="./index.html" target="_self">Home</a></li>
+                        <li><a href="./description.html" target="_self">Description</a></li>
+                        <li><a href="./download.html" target="_self">Download</a></li>
+                        <li><a href="./about.html" target="_self">About_us</a></li>
+                        <li><a href="./contact.html" target="_self" class="active">Contact_us</a></li>
+                    </ul>
+                </header>     
+                <div class="feedback">
+                <form action="mailto:fhpopova21@codingburgas.bg">
+                    <h1>Give your Feedback</h1>
+                    <div class="id">
+                        <input type="text" placeholder="Full name">
+                    </div>
+                    <div class="id">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <textarea cols="15" rows="5" placeholder="Enter your opinions and questions here..."></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+            </div>
+            <footer class="site-footer">
+                <img class="footer-logo"  src="./images/logo.png" alt="TheCoders Logo">
+                <p class="paragraph_footer">Created By TheCoders © 2022</p>
+            </footer>
+        </body>
+        </html>
