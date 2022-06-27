@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body{
+    background-image: url("./s_image/contact_us.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;   
+    background-color: #593E9B;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    width: 300px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: #DAB1DF;
+}
+
+ul.navbar{
+    display: flex;
+    list-style:none;    
+
+}
+
+ul.navbar li{
+    width: 100%;
+
+}
+
+ul.navbar li a{
+    text-decoration: none;
+    color: #8357B9;
+    margin-left: 25px;
+    padding: 25.5px 40px;
+    text-align: center; 
+    background-color: #DAB1DF;
+    grid-template-columns: 1fr auto;    
+    justify-content: space-around;
+    font-size: large;
+}
+
+ul.navbar li a.active{
+    color: #404B69;
+    font-style: italic;
+}
+
+ul.navbar li a:hover{
+    background: #F88D85;
+    transition: .3s;
+    text-transform: uppercase;
+    color:#593E9B;
+}
+/*Header ends here*/
+
+.feedback{
+    margin: 100px 420px;
+    position: center center;
+    width: 360px;
+    box-shadow: 0 0 8px rgba(250, 250, 250, 0.7);
+    opacity: 0.7;
+}
+
+.feedback form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+form h1{
+    padding: 10px 0;
+}
+
+form.id{
+    position: relative;
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid #8357B9;
+    border-radius: 3px;
+    background-color: #DAB1DF;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 15px ;
+    padding-right: 45px;
+    font-size: 20px;
+
+}
+
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #8357B9;
+    border-radius: 3px;
+    background-color: #DAB1DF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 0;
+}
+
+form button{
+    margin-top: 5px;
+    border: none;
+    background-color: #404B69;
+    font-family: 'Times New Roman', Times, serif;
+    color:#DAB1DF;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+
+/*Footer starts here*/
+.site-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+/*Footer text is here*/
+p.paragraph_footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+/*Footer's logo*/
+img.footer-logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+}
+
+/*Footer ends here*/
+
+/*Responsive starts here*/
+
+@media (min-width: 600px) {
+    footer{
+    font-size : 10px;
+    }
+    body{
+    font-size : 12px;
+    }
+    }
+    
+@media (min-width: 1200px) {
+    footer{
+    font-size : 12px;
+    }
+    body{
+    font-size : 14px;
+    }
+    }
+    
+@media (min-width: 1600px) {
+    
+    footer{
+    font-size : 18px;
+    }
+    body{
+    font-size : 20px;
+    }
+    }
+
+/*Responsive ends here*/
